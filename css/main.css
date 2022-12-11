@@ -1,0 +1,95 @@
+* {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 991.98px) {
+  .intro {
+    flex-direction: column;
+  }
+  .text {
+    text-align: center;
+  }
+}
+
+.navbrand {
+  font-weight: bold;
+}
+
+.card img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.card {
+  border-radius: 16px;
+}
+
+.contact {
+  border-radius: 16px;
+  background-image: url(outro-unsplash.jpg);
+  background-size: cover;
+}
+
+.intro {
+  border-radius: 16px;
+  background-image: url(intro-unsplash.jpg);
+  background-size: cover;
+}
+
+.teletrack {
+  background-color: #1e1c56;
+}
+
+.snap {
+  background-color: #48af8d;
+}
+
+.eel {
+  background-color: #a8547f;
+}
+
+.red {
+  background-color: #8a0000;
+}
+
+.bit img {
+  width: 550px;
+  height: 350px;
+  object-fit: contain;
+}
+
+.image-con {
+  background-color: black;
+  border-radius: 16px;
+}
+
+.showcase img {
+  width: 500px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.showcase {
+  border-radius: 16px;
+}
+
+.screens {
+  border-radius: 16px;
+  background-color: #e8e8ee;
+}
+
+.screens-snap {
+  border-radius: 16px;
+  background-color: #ecf7f3;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.figma {
+  border-radius: 16px;
+}
+
