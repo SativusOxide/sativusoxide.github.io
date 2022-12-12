@@ -18,11 +18,25 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+    <script src="zoom-master/jquery.zoom.js"></script>
+    <script>$(document).ready(function(){
+      $('.bg-tele img')
+        .wrap('<span style="display:inline-block"></span>')
+        .css('display', 'block')
+        .parent()
+        .zoom();
+    });
+    </script>
     <link rel="stylesheet" href="css/main.css" />
     <title>Craig Bullock Design</title>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-white">
+    <div id="top"></div>
+    <nav class="navbar sticky-top navbar-expand-lg bg-white mb-4">
       <div class="container-fluid">
         <a href="index.html" class="navbar-brand">CRAIG BULLOCK DESIGN</a>
         <button
@@ -35,14 +49,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto">
-            <a href="index.html#section2" class="nav-item nav-link">About</a>
-            <a href="index.html#section3" class="nav-item nav-link">Work</a>
-            <a href="index.html#section4" class="nav-item nav-link">Contact</a>
+            <a href="index.html#About" class="nav-item nav-link">About</a>
+            <a href="index.html#Work" class="nav-item nav-link">Work</a>
+            <a href="index.html#Contact" class="nav-item nav-link">Contact</a>
           </div>
         </div>
       </div>
     </nav>
-    <div class="content">
+    <div class="content p-3">
       <div class="container-lg">
         <div class="showcase teletrack d-flex justify-content-center p-1 mb-3">
           <img
@@ -72,16 +86,16 @@
           </div>
         </div>
         <div class="showcase-screens mb-3">
-          <div class="screens">
+          <div class="screens bg-tele selected">
             <img
-              class="img-fluid p-5"
+              class="img-fluid bg"
               src="imgs/Teletrack Maintaince Module Wireframe.png"
               alt="Wireframe"
             />
           </div>
         </div>
         <div class="showcase-screens mb-3">
-          <div class="screens">
+          <div class="screens bg-tele selected">
             <img
               class="img-fluid p-5"
               src="imgs/Maintenance Module@2x.png"
@@ -90,7 +104,7 @@
           </div>
         </div>
         <div class="showcase-screens mb-3">
-          <div class="screens">
+          <div class="screens bg-tele selected">
             <img
               class="img-fluid p-5"
               src="imgs/example screens.png"
@@ -100,5 +114,83 @@
         </div>
       </div>
     </div>
+    <div class="container-lg mb-3 mt-4">
+      <div>
+        <h1>Other Projects</h1>
+      </div>
+    </div>
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-xl-4 mb-3">
+          <div class="snap card h-100 border-0">
+            <div class="poopie d-flex align-items-center">
+              <div class="card-body text-white">
+                <h5 class="card-title">Snap Recycling</h5>
+                <p class="card-text">
+                  Make easy money on e-waste in mere seconds
+                </p>
+              </div>
+              <div class="card-body text-end">
+                <a href="snaprecycle.html"><button type="button" class="btn btn-primary">View</button></a>
+              </div>
+            </div>
+            <div class="image d-flex justify-content-center end-project">
+              <img
+                src="imgs/Scene 14.png"
+                class="card-img-bottom img-fluid"
+                alt="Camera"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-3">
+          <div class="eel card h-100 border-0">
+            <div class="poopie d-flex align-items-center">
+              <div class="card-body text-white">
+                <h5 class="card-title">Electrik Eel</h5>
+                <p class="card-text">Feel the electric slip of live music</p>
+              </div>
+              <div class="card-body text-end">
+                <button type="button" class="btn btn-primary">View</button>
+              </div>
+            </div>
+            <div class="image d-flex justify-content-center end-project">
+              <img
+                src="imgs/elektrik_eel_line_up.png"
+                class="card-img-bottom img-fluid"
+                alt="Camera"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-3">
+          <div class="red card h-100 mb-3 border-0">
+            <div class="poopie d-flex align-items-center">
+              <div class="card-body text-white">
+                <h5 class="card-title">RedLift</h5>
+                <p class="card-text">
+                  Collabrative effort to simplify tracking
+                </p>
+              </div>
+              <div class="card-body text-end">
+                <button type="button" class="btn btn-primary">View</button>
+              </div>
+            </div>
+            <div class="image d-flex justify-content-center end-project">
+              <img
+                src="imgs/Free_Square_Coaster_Mockup_2.png"
+                class="card-img-bottom img-fluid"
+                alt="Camera"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer mt-3">
+      <div class="text-center p-3 m-1">
+        <a href="#top" style="color: black;">Return To Top</a>
+      </div>
+    </footer>
   </body>
 </html>

@@ -19,22 +19,25 @@
       crossorigin="anonymous"
     ></script>
     <script
-    src="https://code.jquery.com/jquery-3.6.1.js"
-    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-    crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
     <script src="zoom-master/jquery.zoom.js"></script>
-    <script>$(document).ready(function(){
-      $('.bg img')
-        .wrap('<span style="display:inline-block"></span>')
-        .css('display', 'block')
-        .parent()
-        .zoom();
-    });</script>
-    <link rel="stylesheet" href="css/main.css"/>
+    <script>
+      $(document).ready(function () {
+        $(".bg img")
+          .wrap('<span style="display:inline-block"></span>')
+          .css("display", "block")
+          .parent()
+          .zoom();
+      });
+    </script>
+    <link rel="stylesheet" href="css/main.css" />
     <title>Craig Bullock Design</title>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-white">
+    <nav class="navbar sticky-top navbar-expand-lg bg-white mb-4" id="">
       <div class="container-fluid">
         <a href="index.html" class="navbar-brand">CRAIG BULLOCK DESIGN</a>
         <button
@@ -55,13 +58,9 @@
       </div>
     </nav>
     <div class="content">
-      <div class="container-lg">
+      <div class="container-lg" id="content">
         <div class="showcase snap d-flex justify-content-center p-3 mb-3">
-          <img
-            src="imgs/Scene 14.png"
-            class="img-fluid"
-            alt="null"
-          />
+          <img src="imgs/Scene 14.png" class="img-fluid" alt="null" />
         </div>
         <div class="heading p-1 text-center mb-3">
           <h1>Snap Recycling</h1>
@@ -82,17 +81,17 @@
           </div>
         </div>
         <div class="showcase-screens mb-3">
-            <div class="screens-snap p-4 bg">
-              <img
+          <div class="screens-snap bg selected">
+            <img
               id="snap-wireframe"
               class="img-fluid bg"
               src="imgs/snap recycling wire frame.png"
               alt="Wireframe"
             />
-            </div>
+          </div>
         </div>
         <div class="showcase-screens mb-3">
-          <div class="screens-snap bg p-4">
+          <div class="screens-snap bg selected">
             <img
               class="img-fluid"
               src="imgs/Flowchart.png"
@@ -101,7 +100,7 @@
           </div>
         </div>
         <div class="showcase-screens mb-3">
-          <div class="screens-snap bg p-4">
+          <div class="screens-snap bg selected">
             <img
               class="img-fluid"
               src="imgs/snap recycling screens.png"
@@ -109,8 +108,13 @@
             />
           </div>
         </div>
-        <iframe class="figma mt-3" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFxUWC9BPEZSFpCKydXVTgN%2FPrototype%3Fpage-id%3D0%253A1%26node-id%3D2%253A2%26viewport%3D133%252C398%252C0.41%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A2" allowfullscreen></iframe>
-        <h1 class="mt-5 mb-4">Other Projects</h1>
+        <iframe
+          class="figma selected mt-3 mb-4"
+          style="border: 1px solid rgba(0, 0, 0, 0.1)"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFxUWC9BPEZSFpCKydXVTgN%2FPrototype%3Fpage-id%3D0%253A1%26node-id%3D2%253A2%26viewport%3D133%252C398%252C0.41%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A2"
+          allowfullscreen
+        ></iframe>
+        <h1 class="mb-4">Other Projects</h1>
       </div>
       <div class="container-lg">
         <div class="row">
@@ -122,7 +126,11 @@
                   <p class="card-text">Automating work order management</p>
                 </div>
                 <div class="card-body text-end">
-                  <a href="teletrackmainmod.html"><button type="button" class="btn btn-primary">View</button></a>
+                  <a href="teletrackmainmod.html"
+                    ><button type="button" class="btn btn-primary">
+                      View
+                    </button></a
+                  >
                 </div>
               </div>
               <div class="image d-flex justify-content-center end-project">
@@ -177,6 +185,12 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
+    <footer class="footer mt-3">
+      <div class="text-center p-3 m-1">
+        <a href="#top" style="color: black">Return To Top</a>
+      </div>
+    </footer>
   </body>
 </html>

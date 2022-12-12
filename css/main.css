@@ -6,8 +6,17 @@
   .intro {
     flex-direction: column;
   }
+  .figma.selected {
+    height: 500px;
+  }
   .text {
     text-align: center;
+  }
+  .bg.selected {
+    padding: 0.6rem;
+  }
+  .bg-tele.selected {
+    padding: 0.5rem
   }
 }
 
@@ -46,10 +55,22 @@
 }
 
 .eel {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background-color: #ccc;
   background-color: #a8547f;
 }
 
 .red {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background-color: #ccc;
   background-color: #8a0000;
 }
 
@@ -91,14 +112,36 @@ a {
 
 .figma {
   border-radius: 16px;
+  width: 100%;
+  height: 700px;
 }
 
 .bg img {
   background-color: #ecf7f3;
 }
 
+.bg {
+  padding: 1.5rem;
+}
+
 .end-project img {
   width: 240px;
   height: 300px;
   object-fit: contain;
+}
+
+.bg-tele img {
+  background-color: #e8e8ee;
+}
+
+.bg-tele {
+  padding: 1.5rem;
+}
+
+.navbar {
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.footer {
+  border-top: 1px solid rgb(204, 204, 204);
 }
