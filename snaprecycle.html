@@ -18,7 +18,19 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/main.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+    <script src="zoom-master/jquery.zoom.js"></script>
+    <script>$(document).ready(function(){
+      $('.bg img')
+        .wrap('<span style="display:inline-block"></span>')
+        .css('display', 'block')
+        .parent()
+        .zoom();
+    });</script>
+    <link rel="stylesheet" href="css/main.css"/>
     <title>Craig Bullock Design</title>
   </head>
   <body>
@@ -64,40 +76,107 @@
               money or credit, similarly seen with the Return & Earn schemes.
             </p>
           </div>
-          <div class="col-sm-2">
+          <div class="col-sm-2 mb-3">
             <p class="lead">Status</p>
             <span>Completed</span>
           </div>
         </div>
         <div class="showcase-screens mb-3">
-          <div class="screens-snap">
-            <img
-              class="img-fluid p-5"
+            <div class="screens-snap p-4 bg">
+              <img
+              id="snap-wireframe"
+              class="img-fluid bg"
               src="imgs/snap recycling wire frame.png"
               alt="Wireframe"
             />
-          </div>
+            </div>
         </div>
         <div class="showcase-screens mb-3">
-          <div class="screens-snap">
+          <div class="screens-snap bg p-4">
             <img
-              class="img-fluid p-5"
+              class="img-fluid"
               src="imgs/Flowchart.png"
               alt="User Flowchart"
             />
           </div>
         </div>
         <div class="showcase-screens mb-3">
-          <div class="screens-snap">
+          <div class="screens-snap bg p-4">
             <img
-              class="img-fluid p-5"
+              class="img-fluid"
               src="imgs/snap recycling screens.png"
               alt="Completed Screens"
             />
           </div>
         </div>
-        <iframe class="figma mt-3" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFxUWC9BPEZSFpCKydXVTgN%2FPrototype%3Fpage-id%3D0%253A1%26node-id%3D2%253A2%26viewport%3D133%252C398%252C0.41%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A2" allowfullscreen></iframe>
+        <iframe class="figma mt-3" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFxUWC9BPEZSFpCKydXVTgN%2FPrototype%3Fpage-id%3D0%253A1%26node-id%3D2%253A2%26viewport%3D133%252C398%252C0.41%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A2" allowfullscreen></iframe>
+        <h1 class="mt-5 mb-4">Other Projects</h1>
       </div>
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-xl-4 mb-3">
+            <div class="teletrack card h-100 border-0">
+              <div class="poopie d-flex align-items-center">
+                <div class="card-body text-white">
+                  <h5 class="card-title">Teletrack Maintaince Module</h5>
+                  <p class="card-text">Automating work order management</p>
+                </div>
+                <div class="card-body text-end">
+                  <a href="teletrackmainmod.html"><button type="button" class="btn btn-primary">View</button></a>
+                </div>
+              </div>
+              <div class="image d-flex justify-content-center end-project">
+                <img
+                  src="imgs/Portrait.png"
+                  class="card-img-bottom img-fluid"
+                  alt="null"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 mb-3">
+            <div class="eel card h-100 border-0">
+              <div class="poopie d-flex align-items-center">
+                <div class="card-body text-white">
+                  <h5 class="card-title">Electrik Eel</h5>
+                  <p class="card-text">Feel the electric slip of live music</p>
+                </div>
+                <div class="card-body text-end">
+                  <button type="button" class="btn btn-primary">View</button>
+                </div>
+              </div>
+              <div class="image d-flex justify-content-center end-project">
+                <img
+                  src="imgs/elektrik_eel_line_up.png"
+                  class="card-img-bottom img-fluid end-project"
+                  alt="Camera"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 mb-3">
+            <div class="red card h-100 mb-3 border-0">
+              <div class="poopie d-flex align-items-center">
+                <div class="card-body text-white">
+                  <h5 class="card-title">RedLift</h5>
+                  <p class="card-text">
+                    Collabrative effort to simplify tracking
+                  </p>
+                </div>
+                <div class="card-body text-end">
+                  <button type="button" class="btn btn-primary">View</button>
+                </div>
+              </div>
+              <div class="image d-flex justify-content-center end-project">
+                <img
+                  src="imgs/Free_Square_Coaster_Mockup_2.png"
+                  class="card-img-bottom img-fluid"
+                  alt="Camera"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </body>
 </html>

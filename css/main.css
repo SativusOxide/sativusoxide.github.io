@@ -93,3 +93,12 @@ a {
   border-radius: 16px;
 }
 
+.bg img {
+  background-color: #ecf7f3;
+}
+
+.end-project img {
+  width: 240px;
+  height: 300px;
+  object-fit: contain;
+}
