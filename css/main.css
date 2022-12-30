@@ -65,11 +65,6 @@
 }
 
 .red {
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
   background-color: #ccc;
   background-color: #8a0000;
 }
@@ -105,6 +100,11 @@
   background-color: #ecf7f3;
 }
 
+.screens-red {
+  border-radius: 16px;
+  background-color: #f3e5e5;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -132,6 +132,10 @@ a {
 
 .bg-tele img {
   background-color: #e8e8ee;
+}
+
+.bg-red img {
+  background-color: #f3e5e5;
 }
 
 .bg-tele {
